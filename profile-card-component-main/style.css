@@ -1,0 +1,163 @@
+:root {
+    --dark-gray: hsl(0, 0%, 59%);
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--very-dark-blue);
+}
+
+.main {
+    background-color: var(--dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-bg {
+    position: absolute;
+    background: url(images/bg-pattern-top.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -528px;
+    left: -280px;
+}
+.bottom-bg {
+    position: absolute;
+    background: url(images/bg-pattern-bottom.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    bottom: -608px;
+    right: -240px;
+}
+.card {
+    position: relative;
+    width: 360px;
+    background-color: #fff;
+    border-radius: 20px;
+    z-index: 99; 
+    text-align: center;
+}
+.card-img {
+    height: 140px;
+    background: url(images/bg-pattern-card.svg);
+    border-radius: 20px 20px 0 0;
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin: -50px auto 20px auto;
+    
+}
+.profile-img img {
+    width: 100%;
+    height: auto;  
+    display: block;
+}
+.profile-details {
+    padding-bottom: 30px;
+}
+h2 {
+    font-weight: 700;
+    margin-bottom: 10PX;
+}
+h2 span {
+    color: var(--dark-gray);
+    font-weight: 400;
+    padding: 5px;
+}
+.city {
+    color: var(--dark-grayish-blue);
+    font-size: 18px;
+    font-weight: 400;
+    /* padding: 5px; */
+}
+.card-bottom {
+    border-top: 1px solid hsl(0, 3%, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+.stats {
+    font-weight: 700;
+}
+.info {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--dark-gray);
+}
+
+
+/* RESPONSIVE MEDIA */
+@media(max-width: 375px) {
+    .top-bg {
+        height: 375px;
+        width: 375px;
+        top: -160px;
+        left: -167px;
+    }
+    .bottom-bg {
+        height: 375px;
+        width: 375px;
+        bottom: -79px;
+        right: -167px;
+    }
+    .card {
+        width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
